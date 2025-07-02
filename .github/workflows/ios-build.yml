@@ -33,11 +33,11 @@ jobs:
       - name: Build iOS App
         run: |
           cd ios
-          xcodebuild -workspace mycarebridge.xcworkspace -scheme mycarebridge -sdk iphoneos -configuration Release
+          xcodebuild -workspace MyCareBridge.xcworkspace -scheme MyCareBridge -sdk iphonesimulator -configuration Release
 
       - name: Upload Build Artifacts
         if: success()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ios-build
           path: ios/build/Release-iphoneos/
