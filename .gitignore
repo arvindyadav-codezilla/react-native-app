@@ -34,4 +34,5 @@ ios/Pods/
 *.tmp
 
 # Coverage
-coverage/
+coverage/android/.gradle/
+mcb_zip.zip
