@@ -30,10 +30,13 @@ jobs:
           cd ios
           pod install
 
+      - name: Set NODE_BINARY for Hermes
+        run: echo "NODE_BINARY=$(which node)" >> $GITHUB_ENV
+
       - name: Build iOS App
         run: |
           cd ios
-           xcodebuild -workspace MyCareBridge.xcworkspace -scheme MyCareBridge -sdk iphonesimulator -configuration Release
+          xcodebuild -workspace MyCareBridge.xcworkspace -scheme MyCareBridge -sdk iphonesimulator -configuration Release
 
       - name: Upload Build Artifacts
         if: success()
