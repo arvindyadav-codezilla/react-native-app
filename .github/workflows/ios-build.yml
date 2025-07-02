@@ -40,6 +40,12 @@ jobs:
       - name: Set NODE_BINARY for Hermes
         run: echo "NODE_BINARY=$(which node)" >> $GITHUB_ENV
 
+      - name: Symlink node for Hermes (workaround)
+        run: |
+          NODE_PATH=$(which node)
+          sudo mkdir -p /usr/local/opt/node@20/bin
+          sudo ln -sf $NODE_PATH /usr/local/opt/node@20/bin/node
+
       - name: Build iOS App
         run: |
           cd ios
