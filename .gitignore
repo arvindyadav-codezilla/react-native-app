@@ -36,3 +36,4 @@ ios/Pods/
 # Coverage
 coverage/android/.gradle/
 mcb_zip.zip
+android/.gradle/
