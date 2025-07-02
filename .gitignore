@@ -1,0 +1,37 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build output
+android/app/build/
+ios/build/
+ios/Pods/
+
+# Misc
+.env
+*.keystore
+*.jks
+
+# Metro
+.expo/
+.expo-shared/
+
+# VSCode
+.vscode/
+
+# React Native
+*.swp
+*.swo
+*.tmp
+
+# Coverage
+coverage/

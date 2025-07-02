@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "828264493130",
+    "project_id": "mycarebridge-1711490322984",
+    "storage_bucket": "mycarebridge-1711490322984.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828264493130:android:0f5c21dd2acaacfad3b6b3",
+        "android_client_info": {
+          "package_name": "com.providedigital.mycarebridge"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg9DiAotoJsnU9DkbF9AnGk0JLSUJOajs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
